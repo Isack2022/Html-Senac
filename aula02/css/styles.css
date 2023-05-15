@@ -2,6 +2,10 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+   
+}
+html{
+    overflow-x: hidden;
 }
 header{
     /* aplicar uma imagem de fundo com 
@@ -36,7 +40,7 @@ header #direita{
     flex: 1;
     height: 300px;
     margin-top: 240px;
-    margin-right:-200px ;
+    margin-right: -170px ;
 }
 header #esquerda{
     flex: 5;
@@ -76,4 +80,110 @@ header #esquerda #end img{
     margin-top: 20px;
     width: 150px;
     height: 150px;
+}
+main #programacao{
+    display: flex;
+    color: #F2F2F2;
+}
+
+main #programacao div{
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+main #programacao div h4{
+    color: #F28705;
+}
+
+main #programacao div h3{
+    font-size: 20px;
+    color: #033E8C;
+}
+
+main #programacao div p{
+    color: #033E8C;
+}
+
+main #programacao div p span{
+    color: #F28705;
+    margin: 0px 10px;
+}
+
+main hr{
+    display: block;
+    border: 0.2px solid #F28705;
+    width: 58%;
+    margin: 10px 0px;
+}
+
+main #cursos{
+   display: inline-flex;
+   padding: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main #cursos div{
+    flex: 1;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+main #cursos div h2{
+   color: #033E8C;
+   margin: 10px 0px;
+}
+
+main #cursos div ul{
+    padding: 20px;
+}
+main #cursos div h3{
+    margin-top: 38px; 
+}
+main #cursos div span{
+    color: #F28705;
+    font-weight: bold;
+}
+
+main #cursos-direita{
+    padding: 20px 0px 0px 100px;
+}
+
+footer hr{
+    width: 80%;
+    border-color: #F28705;
+    border-width: 1px;
+    margin: 10px 0px;
+    margin-left: auto;
+}
+
+footer #rodape{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+footer #rodape div{
+    flex: 1;
+    margin-left: 15px;
+    line-height: 35px;
+    margin: 20px 40px 0 20px;
+}
+footer #rodape div h2{
+    color: #033E8C;
+}
+footer #rodape div h3{
+    color: #033E8C;
+}
+
+footer #rodape div #fsc{
+    width: 20%;
+}
+
+footer #rodape div #foto{
+    margin-left: 200px;
+    width: 45%;
+    height: 200px;
 }
