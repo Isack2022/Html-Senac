@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: silver;
+}
+main{
+    background-color: white;
+    width: 60%;
+    margin: 50px auto;
+    border-radius:50px;
+    height: 600px;
+    background-image: url("../img/astronauta.jpg");
+    background-repeat: no-repeat;
+    background-position: 480px -170px;
+    background-size: 500px;
+    box-shadow: 2px black;
+}
+
+main #formulario{
+    display: inline-block;
+    width: 50%;
+}
+
+main #formulario h1{
+    font-family: 'Bebas Neue', sans-serif;;
+    margin: 20px 20px 20px 20px;
+    display: inline-flex;
+}
+
+main #formulario #p{
+    font-family: 'Outfit', sans-serif;;
+    font-size: 13px;
+    margin: 0px 0px 0px 120px;
+}
+
+
+main #formulario h2{
+    font-family: 'Outfit', sans-serif;;
+    margin: 10px 20px 20px 120px;
+    font-size: 50px;
+    display: inline-flex;
+}
+
+main #formulario select{
+    display: inline-flex;
+    font-family: sans-serif;
+    margin: 20px 20px 20px 308px;
+    border-radius: 20px;
+}
+
+main  #formulario select option{
+    display: inline-flex;
+    font-family: sans-serif;
+    margin: 20px 20px 20px 308px;
+    border-radius: 20px;
+}
+
+main #formulario #btn{  
+    background-image: url("https://t.ctcdn.com.br/essK16aBUDd_65hp5umT3aMn_i8=/400x400/smart/filters:format(webp)/i606944.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    width: 56%;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: block;
+    margin: 20px 106px;
+}
+
+main #formulario #linha{    
+    margin: 0px 165px;
+    font-family: sans-serif;
+    color: silver;
+    font-size: 15px;
+}
+
+main #formulario input[type="email"],input[type="password"]{  
+    display: block;
+    margin: 18px 106px;
+    width: 56%;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.custom-btn {
+    width: 56%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 18px 106px; 
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-7 {
+    background: linear-gradient(80deg, #373AFA 0%, #9A2BFD 100%);
+    line-height: 45px;
+    padding: 0;
+    border: none;
+}
+.btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #9A2BFD;
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+.btn-7:before{
+    height: 0%;
+    width: 2px;
+}
+.btn-7:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-7:hover{
+    color: #9A2BFD;
+    background: transparent;
+}
+.btn-7:hover:before {
+    height: 100%;
+}
+.btn-7:hover:after {
+    width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #9A2BFD;
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+.btn-7 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-7 span:after {
+    height: 2px;
+    width: 0%;
+}
+.btn-7 span:hover:before {
+    height: 100%;
+}
+.btn-7 span:hover:after {
+    width: 100%;
+}
+
+
+main #formulario #a{
+    display: inline-block;
+    color: #9A2BFD  ;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0px 0px 275px;
+    margin-bottom: 10px;
+}
+
+
+
+main #formulario #sign{
+    display: inline-block;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin: 3px 147px;
+
+}
+main #formulario #sign a{
+    font-family: sans-serif;
+    color: #9A2BFD;
+    text-decoration: none;
+}
+
