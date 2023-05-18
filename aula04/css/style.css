@@ -1,0 +1,167 @@
+* {
+    /*Zerar as margens */
+    margin: 0; /*margem externa zerada*/
+    padding: 0; /*margem interna zerada*/
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(80deg ,#373AFA,#9A2BFD);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+    color: #9A2BFD;
+    position: fixed;
+    width: 100%;
+    z-index: auto;
+    top: 0;
+    text-align: center;
+}
+
+section{
+    margin:20px auto; 
+    width: 40%; 
+    background-color: white;
+    border: 2px solid #373AFA;
+    border-radius: 10px;
+    box-shadow: 2px black;
+    padding: 10px;
+}
+
+#login label{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 0px 5px 0px;
+}
+
+#login input{
+    width: 100%;
+    padding: 10px 10px 5px 1px;
+    margin-bottom: 10px; 
+    font-size: 16px;
+    font-weight: 300;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid #373AFA;
+    background-color: none;
+}
+
+#login select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    outline-color: #373AFA; 
+    border-radius: 10px;
+    background-color: white; 
+    border-color: #373AFA;
+}
+
+#dadospessoais label {
+    display: block;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#dadospessoais input[type=text]{
+    width: 100%;
+    padding: 10px 10px 5px 1px;
+    margin-bottom: 10px; 
+    font-size: 16px;
+    font-weight: 300;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #373AFA;
+    background-color: none;
+}
+
+#dadospessoais input[type=date]{
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#endereco{
+    width: 70%;    
+}
+
+#endereco select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    outline-color: #373AFA; 
+    border-radius: 10px;
+    background-color: white; 
+    border-color: #373AFA;
+}
+
+#contato label{
+    display: block;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#contato input{
+    width: 100%;
+    padding: 10px 10px 5px 1px;
+    margin-bottom: 10px; 
+    font-size: 16px;
+    font-weight: 300;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #373AFA;
+    background-color: none;
+}
+
+#interesse label{
+    display: block;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#interesse input{
+    margin: 9px 0px;
+    border-radius: 20px;
+    font-size: 16px;    
+}
+
+#interesse textarea{
+    resize: none; 
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+
+#interesse input[type=checkbox]{
+    margin-left: 7px;
+}
+
+form input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+	background: white;
+	color: black;
+	border-style: outset;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+	border-color: #0066A2;
+	height: 50px;
+	width: 30%;
+	font-weight: bolder;
+	text-shadow: none;
+}
+  
