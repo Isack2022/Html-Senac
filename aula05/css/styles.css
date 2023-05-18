@@ -31,19 +31,19 @@ main #formulario h1{
     display: inline-flex;
 }
 
-main #formulario #p{
-    font-family: 'Outfit', sans-serif;;
-    font-size: 13px;
-    margin: 0px 0px 0px 120px;
-}
-
-
 main #formulario h2{
     font-family: 'Outfit', sans-serif;;
-    margin: 10px 20px 20px 120px;
+    margin: 10px 20px 10px 130px;
     font-size: 50px;
     display: inline-flex;
 }
+
+main #formulario #p{
+    font-family: 'Outfit', sans-serif;;
+    font-size: 13px;
+    margin: 0px 0px 0px 115px;
+}
+
 
 main #formulario select{
     display: inline-flex;
@@ -203,8 +203,6 @@ main #formulario #a{
     padding: 5px 0px 0px 275px;
     margin-bottom: 10px;
 }
-
-
 
 main #formulario #sign{
     display: inline-block;
