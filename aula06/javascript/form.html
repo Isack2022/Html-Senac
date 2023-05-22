@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/calculadora.png" type="image/x-icon">
+    <title>Cálculos</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form onsubmit="return false;">
+        <input type="text" name="" id="">
+        <div>
+            <button id="btn7" onclick="adiciona7();">7</button>
+            <button id="btn8" onclick="adiciona8();">8</button>
+            <button id="btn9" onclick="adiciona9();">9</button>
+            <button id="btn-soma" onclick="soma()">+</button>
+            <button id="btn-back" onclick="back()">&lAarr;</button>
+        </div>
+        <div>
+            <button id="btn4" onclick="adiciona4();">4</button>
+            <button id="btn5" onclick="adiciona5();">5</button>
+            <button id="btn6" onclick="adiciona6();">6</button>
+            <button id="btn-menos" onclick="subtrair()">-</button>
+            <button id="btn-raiz" onclick="raiz()">√</button>
+        </div>
+        <div>
+            <button id="btn1" onclick="adiciona1();">1</button>
+            <button id="btn2" onclick="adiciona2();">2</button>
+            <button id="btn3" onclick="adiciona3();">3</button>
+            <button id="btn-mutiplicar" onclick="mutiplicacao()">x</button>
+            <button id="btn-porcetagem" onclick="porcetagem()">%</button>
+        </div>
+        <div>
+            <button id="btn-ponto" onclick="adicionaPonto()">•</button>
+            <button id="btn0" onclick="adiciona0();">0</button>
+            <button id="btn-clear" onclick="apagarDisplay();">C</button>
+            <button id="btn-divisão" onclick="dividir()">÷</button>
+            <button id="btn-virgula" onclick="adicionaVirgula()">,</button>
+            
+        </div>
+        <div>
+            <button id="btn-resultado" onclick="igual()">=</button>
+        </div>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>
