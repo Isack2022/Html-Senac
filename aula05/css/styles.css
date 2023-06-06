@@ -6,6 +6,7 @@
 }
 body{
     background-color: silver;
+    overflow: hidden;
 }
 main{
     background-color: white;
@@ -85,7 +86,7 @@ main #formulario #linha{
     font-size: 15px;
 }
 
-main #formulario input[type="email"],input[type="password"]{  
+main #formulario input[type="text"],input[type="password"]{  
     display: block;
     margin: 18px 106px;
     width: 56%;
@@ -217,3 +218,71 @@ main #formulario #sign a{
     text-decoration: none;
 }
 
+#register{
+    cursor: pointer;
+    color: #9A2BFD;
+}
+
+#shadow{
+    z-index: -100;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    position: absolute;
+    width: 202vh;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: ease 1s;
+}
+
+#shadow div{
+    background-color: #fff;
+    box-shadow: 3px black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 20px;
+    margin: 10% auto 10% auto;
+}
+#shadow #close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: ease 1s;
+}
+
+#close:hover{
+    transform: rotate(360deg);
+}
+
+#shadow input[type="file"]{
+    display: none;
+ 
+}
+
+#shadow label{
+    display: block;
+    margin-bottom: 120px;
+    margin: 18px 106px;
+    width: 56%;
+    color: #fff;
+    background-color:  #1c1c1c;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#shadow label:hover{    
+    background: black;
+}

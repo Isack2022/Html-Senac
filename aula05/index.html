@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
     
 
     <main>
-        <form action="confirmar.html" method="post" enctype="multipart/form-data" id="formulario">
+        <!-- O comando return false é utilizando no onSubmit para enviar que o formulário seja enviado -->
+        <form onsubmit="return false" method="post" id="formulario">
             <h1>HAZE.</h1>
             <select name="txtLanguage" id="txtLanguage">
                 <option value="EN">EN</option>
@@ -25,17 +27,33 @@
                 <p>━━━━ or ━━━━</p>
             </div>
                 
-                <input type="email" name="txtemail" id="txtemail" placeholder="Your email">
+                <input type="text" name="txtuser" id="txtuser" placeholder="Username">
                 <input type="password" name="txtsenha" id="txtsenha" placeholder="Password">
                 <a href="https://youtu.be/a8Ris2rWkIw" id="a"  target="_blank">Forget password?</a>    
-                <!-- <input type="submit" id="long" value="Log in"> -->
-                <button class="custom-btn btn-7"><span>Log in</span></button>
+                <button class="custom-btn btn-7" id="btnLogin"><span>Log in</span></button>
                 <div id="sign">
-                    <p>Don´t have an acout? <a href="https://youtu.be/iE3kD4X_Fwg" target="_blank">Sign up</a></p>
+                    <p>Don´t have an acout? <span id="register">Sign up</span></a></p>
+                </div>
+            
+                <div id="shadow">
+                    <div>
+                        <a href="#" id="close">&times;</a>
+                        <form onsubmit="return false">
+                            <input type="text" name="txtusuario" id="txtusuario" placeholder="Username">
+                            <input type="password" name="txtpassword" id="txtpassword" placeholder="Password">
+                            <input type="text" name="txtemail" id="txtemail" placeholder="E-mail">
+                            <label for="txtfoto">Escolhe foto</label>
+                            <input type="file" name="Foto" id="txtfoto">
+                            <button class="custom-btn btn-7" id="btnregister"><span>Register</span></button>
+                        </form>
+                    </div>       
                 </div>
         </form>
     </main>
+    
 
 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
