@@ -33,14 +33,14 @@ main #formulario h1{
 }
 
 main #formulario h2{
-    font-family: 'Outfit', sans-serif;;
+    font-family: 'Outfit', sans-serif;
     margin: 10px 20px 10px 130px;
     font-size: 50px;
     display: inline-flex;
 }
 
 main #formulario #p{
-    font-family: 'Outfit', sans-serif;;
+    font-family: 'Outfit', sans-serif;
     font-size: 13px;
     margin: 0px 0px 0px 115px;
 }

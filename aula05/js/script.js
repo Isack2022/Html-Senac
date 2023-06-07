@@ -98,3 +98,31 @@ btncad.onclick = ()=>{
         .catch((error)=>console.error(`Error when registering-> ${error}`));
     }
 }
+
+
+function carregarDados(){
+    const estrutura = document.getElementById("estrutura");
+
+    fetch("http://127.0.0.1:30021/users/list").then((response)=>response.json())
+    .then((result)=>{
+        result.data.map((item,index)=>{
+            //Criandouma div com class e let para colocar os dados dos usuários
+            let div_user = document.createElement("div");
+            div_user.setAttribute("class","div_user");
+            div_user.innerHTML=`
+                <img src="img/perfil.png">
+                <h2>${item.nomeusuario}</h2>
+                <h3>${item.email}</h3>
+                <a href="#" onclick="editar('${item.idusuario}','${item.nomeusuario}')">
+                    <img src="img/lapis.png">
+                </a>
+            `
+            estrutura.appendChild(div_user);
+        })
+    }).catch((error)=>console.log(`Error when executing the API ->${error}`));
+}
+
+
+function editar(id, usuario){
+    alert(`O id é ${id} e o nome é ${usuario}`)
+}

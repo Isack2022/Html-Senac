@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/astronauta.jpg)
+}
+
+
+main, header{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+header h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 20pt;
+    font-weight: lighter;
+    padding: 10px; 
+    border-radius: none;
+
+}
+
+
+.div_user{
+    display: flex;
+    box-shadow: 0px 0px 10px silver;
+    margin: 5px auto 20px auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    transition: ease 0.5s;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.div_user img{
+    width: 80px;
+    height: 80px;
+}
+
+.div_user h2, h3{
+    font-family: 'Outfit', sans-serif;
+    font-weight: lighter;
+    color: #9A2BFD;
+}
+
+.div_user:hover{
+    transform: scale(1.1);
+    background-image: url(../img/astronauta.jpg);
+    background-position: 0 -540px;
+}
+
+.div_user a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
