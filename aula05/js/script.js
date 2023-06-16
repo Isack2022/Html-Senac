@@ -4,6 +4,7 @@ const txtuser = document.getElementById("txtuser");
 const txtpass = document.getElementById("txtsenha");
 let autenticado;
 let token;
+let key;
 
 
 btn.onclick = ()=>{
@@ -33,6 +34,9 @@ btn.onclick = ()=>{
             token = dado.token;
             txtuser.value = "";
             txtpass.value = ""; 
+            console.log(dado)
+            //Mudar tela 
+            window.location.href=`list.html?key=${token}`;
         }
         else{
             txtuser.value = "";
@@ -101,6 +105,8 @@ btncad.onclick = ()=>{
 
 
 function carregarDados(){
+
+    key = window.location.search.substring(5,window.location.search.length);
     const estrutura = document.getElementById("estrutura");
 
     fetch("http://127.0.0.1:30021/users/list").then((response)=>response.json())
@@ -113,7 +119,7 @@ function carregarDados(){
                 <img src="img/perfil.png">
                 <h2>${item.nomeusuario}</h2>
                 <h3>${item.email}</h3>
-                <a href="#" onclick="editar('${item.idusuario}','${item.nomeusuario}')">
+                <a href="#" onclick="editar('${item.idusuario}','${item.nomeusuario}','${item.email}','${item.foto}')">
                     <img src="img/lapis.png">
                 </a>
             `
@@ -123,6 +129,104 @@ function carregarDados(){
 }
 
 
-function editar(id, usuario){
-    alert(`O id é ${id} e o nome é ${usuario}`)
+function editar(id, usuario, email,foto){
+    //Fazer uma referência ao body da página html
+    
+    const body = document.body;
+    const div_shadow = document.createElement("div");
+    const div_while = document.createElement("div");
+    const form = document.createElement("form");
+    const input_id = document.createElement("input");
+    const input_user = document.createElement("input");
+    const input_pass = document.createElement("input");
+    const input_cpass = document.createElement("input");
+    const input_email = document.createElement("input");
+    const input_file = document.createElement("input");
+    const input_sub = document.createElement('input');
+    const fechar = document.createElement("a");
+    
+
+    //Aplicar atributos ao elemento
+    div_shadow.setAttribute("id","div_shadow");
+
+    div_while.setAttribute("id","div_while");
+
+    fechar.setAttribute("href","#");
+    fechar.setAttribute("id","fechar");
+    fechar.setAttribute("onclick","fecharFormAtualizar();");
+    fechar.innerHTML="&times;";
+    div_while.appendChild(fechar);
+
+    //Atributo para não enviar o formulário. O envio será via javascript.
+    form.setAttribute("onsubmit","retrn false;");
+
+    //Aplicar os atribtos ao id: type, placeholder e disabled
+    input_id.setAttribute("type","text");
+    input_id.setAttribute("placeholder",`Id do Usuário: ${id} `);
+    input_id.setAttribute("disabled","true");
+
+    //Aplicar os atributos ao user: type, placeholder e disabled
+    input_user.setAttribute("type","text");
+    input_user.setAttribute("placeholder",`Nome do usuário: ${usuario} `);
+    input_user.setAttribute("disabled","true");
+
+    //Aplicar os atributos a senha e a confimarção da senha
+    input_pass.setAttribute("type","password");
+    input_pass.setAttribute("placeholder","senha");
+
+    input_cpass.setAttribute("type","password");
+    input_cpass.setAttribute("placeholder","Confirma a senha");
+
+    //Aplicar os atributos ao email: type e placeholder
+    input_email.setAttribute("type","email");
+    input_email.setAttribute("placeholder",`${email}`);
+
+    //Aplicar os atributos ao controle file: type e value
+    input_file.setAttribute("type","file");
+    input_file.setAttribute("id","txtfoto");
+    input_file.setAttribute("value",`${foto}`);
+
+    //Aplicar os atributos ao botão 
+    input_sub.setAttribute("type","submit");
+    input_sub.setAttribute("value","Atualizar");
+   
+    input_sub.onclick = ()=>{
+        if(input_cpass.value != input_pass.value){
+            input_cpass.value= "";
+            return alert("Senha de confirmaçãom incorreta");
+        }
+        else{
+            fetch(`http://127.0.0.1:30021/users/update/${id}`,{
+                method:"PUT",
+                headers:{
+                    "accept":"application/json",
+                    "content-type":"application/json",
+                    "token": key
+                },
+                body:JSON.stringify({
+                    senha:input_pass.value,
+                    email:input_email.value,
+                    foto:input_file.value
+                })
+            }).then
+        }
+    }
+
+    form.appendChild(input_id);
+    form.appendChild(input_user);
+    form.appendChild(input_pass);
+    form.appendChild(input_cpass);
+    form.appendChild(input_email);
+    form.appendChild(input_file);
+    form.appendChild(input_sub);
+    div_while.appendChild(form);
+    div_shadow.appendChild(div_while);
+    body.appendChild(div_shadow);
 }
+
+function fecharFormAtualizar(){
+    document.getElementById("div_shadow").style.zIndex="-100";
+    document.getElementById("div_shadow").style.opacity="0";
+    window.location.reload();
+}
+

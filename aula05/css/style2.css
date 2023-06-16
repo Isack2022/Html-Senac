@@ -49,19 +49,95 @@ header h1{
 .div_user h2, h3{
     font-family: 'Outfit', sans-serif;
     font-weight: lighter;
-    color: #9A2BFD;
 }
 
 .div_user:hover{
     transform: scale(1.1);
     background-image: url(../img/astronauta.jpg);
     background-position: 0 -540px;
+    color: white;
 }
 
 .div_user a img{
     width: 30px;
     height: 30px;
 }
+
+input[type="text"],input[type="password"], input[type="email"],input[type="file"]{  
+    display: block;
+    margin: 18px 106px;
+    width: 56%;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 18px 106px;
+    width: 56%;
+    background: linear-gradient(80deg, #373AFA 0%, #9A2BFD 100%);
+    border-radius: 7px;
+    border: 1px solid #9A2BFD;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-position: 0 -540px;
+    color: white;
+}
+
+
+#div_shadow{
+    z-index: 1000;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    position: absolute;
+    width: 200vh;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: ease 1s;
+}
+
+#div_shadow #div_while{
+    background-color: #fff;
+    box-shadow: 3px black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 20px;
+    margin: 10% auto 10% auto;
+}
+#div_shadow #close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: ease 1s;
+}
+
+#close:hover{
+    transform: rotate(360deg);
+}
+
+
 
 
 

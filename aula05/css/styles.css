@@ -86,7 +86,7 @@ main #formulario #linha{
     font-size: 15px;
 }
 
-main #formulario input[type="text"],input[type="password"]{  
+main #formulario input[type="text"],input[type="password"],input[type="email"]{  
     display: block;
     margin: 18px 106px;
     width: 56%;
