@@ -1,5 +1,6 @@
-/* Importação da fonte Lato */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Importação das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&display=swap');
 /* Formatação Global do site da cafeteria */
 /* Utilização do seletor asterisco(*) para referenciar todas as tags
 html e fazer uma formatação para retirar as margens deste elementos */
@@ -16,7 +17,7 @@ html{
 /* Aplicação de altura e plano de fundo ao header. Vamos colocar uma imagem 
 como plano de fundo */
 header{
-    height: 530px; /*Altura do header e 300px*/
+    height: 650px; /*Altura do header e 300px*/
     background-image: url("../img/cafe2.jpg");/*Imagem de fundo*/
     background-size: 100%; /*Redimensionar o plano de fundo para 100% da tela*/
     /*Posição do plano de fundo, onde o primeiro valor é x, ou seja,
@@ -152,5 +153,63 @@ footer a ion-icon:hover{
     color: #D99A09;
 }
 
+/* Esconder a tag h1 */
+h1{
+    display: none;
+}
 
+.slogan{
+    margin-top: 94px;
+    margin-left: 60px;
+    font-size: 50pt;
+    color: rgb(255, 254, 253);
+    font-family: 'Geologica', sans-serif;
+    text-shadow: 5px 5px 2px black;
+}
 
+.div-home{
+    flex: 1;
+    margin: 40px 20px 30px 20px;
+}
+
+.div-home img{
+    border-radius: 20px;
+}
+
+.sub-h3{
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+
+.sub-h3 a{
+    color: #D99A09;
+    text-decoration: none;
+}
+
+.sub-h3 a:hover{
+    color: #D99A09;
+    text-decoration: none;
+}
+
+.texto-1{
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.video{
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+    margin: 0px 20px;
+}
+
+.video iframe{
+    width: 100%;
+    height: 700px;
+    border-radius: 40px;
+}
