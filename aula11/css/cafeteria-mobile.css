@@ -1,0 +1,7 @@
+/* Definir a media query junto com as dimensões */
+@media screen and (min-width:0px) and (max-width:576px){
+    header{
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+}
