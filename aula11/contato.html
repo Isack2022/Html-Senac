@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cafeteria.css">
+    <title>Cafeteria</title>
+</head>
+<body>
+    <header>
+        <nav >
+            <ul>
+                <li class="nav-header"><a href="index.html">Home</a></li>
+                <li class="nav-header"><a href="cardapio.html">Cardápio</a></li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/icon.png" alt="Logo da Cafeteria" id="logo">
+                    </a>
+                </li>
+                <li class="nav-header"><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li class="nav-header"><a href="contato.html">Contato</a></li>
+                <li class="checkout">
+                    <a href="checkout.html">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="em-linha">
+          <div class="uma-fracao">
+            <img class="img-default" src="img/tomarcafe1.jpg" alt="" />
+          </div>
+          <div class="uma-fracao">
+            <h2 class="sub-h2">Contato</h2>
+            <form
+              class="form"
+              onsubmit="return false"
+              enctype="multipart/form-data"
+            >
+              <input
+                class="input-1"
+                type="text"
+                id="txtnome"
+                required
+                placeholder="Nome Completo"
+              />
+              <input
+                class="input-1"
+                type="email"
+                id="txtemail"
+                required
+                placeholder="E-Mail"
+              />
+              <input
+                class="input-1"
+                type="tel"
+                id="txttelefone"
+                required
+                placeholder="Telefone"
+              />
+  
+              <select id="txtassunto" class="input-1">
+                <option value="Selecione">Selecione um Assunto</option>
+                <option value="Dúvida">Dúvida</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Devolução">Devolução</option>
+              </select>
+  
+              <textarea class="textarea" name="txtmensagem">Mensagem</textarea>
+  
+              <input type="file" id="txtanexo" class="input-1" />
+              <input
+                class="btn-enviar"
+                type="submit"
+                value="Enviar"
+                id="btnenviar"
+              />
+            </form>
+          </div>
+        </section>
+      </main>
+
+
+
+    <footer>
+        <div class="em-linha">
+            <div class="uma-fracao">
+                <h3>Parceiros</h3>
+                <ul>
+                    <li><a href="https://www.cafe3coracoes.com.br"><img class="img-parceiros" src="img/trescoracao.png" alt="Logo Café três coração"></a></li>
+                    <li><a href="https://catupiry.com.br"><img class="img-parceiros" src="img/catupiry.png" alt="Logo Perdigão"></a></li>
+                    <li><a href="https://www.laticiniosaviacao.com.br"><img class="img-parceiros" src="img/aviacao.png" alt="Logo Perdigão"></a></li>
+                    <li><a href="https://www.lojabauducco.com.br"><img  class="img-parceiros" src="img/bauducco.png" alt="Logo Bauducco"></a></li>
+                </ul>
+            </div>
+            <div class="uma-fracao">
+                <p>Av. Francisco Matarazzo - 612 - Água Branca - São Paulo - SP <br>
+                CEP: 05001-000 - Telefone 11-5371-2532 | 11-9652-3421</p>
+            </div>
+            <div class="uma-fracao">
+                <ul>
+                    <li>
+                        <a href="">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="end-footer">
+            &copy; Copyrigth 2023 - Design by <a href="https://github.com/Isack2022">Isack Santos</a> | <a href="javascript:void" onclick="politica();">Politica de Privacidade</a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
