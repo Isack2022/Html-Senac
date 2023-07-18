@@ -401,7 +401,9 @@ section .uma-fracao ion-icon{
   width: 20%;
 }
 
-
+header .btn-mobile{
+  display: none;
+}
 
 /*cores-texto*/
 .txt-orange-1 {
