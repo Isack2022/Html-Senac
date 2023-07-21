@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Cafeteria</title>
 </head>
-<body>
+<body onload="closeMenu()">
     <header>
         <a href="javascript:void" class="btn-mobile">
             <ion-icon name="menu-outline"></ion-icon>
@@ -41,7 +41,7 @@
         <div>
             <ul class="em-linha tirar-marcador">
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudaItem(`Cafes`)">
                         <span class="material-symbols-outlined">
                             local_cafe
                         </span>
@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudaItem(`Bolos`)">
                         <span class="material-symbols-outlined">
                             cake
                         </span>
@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudaItem(`Sobremesa`)">
                         <span class="material-symbols-outlined">
                             icecream
                         </span>
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudaItem(`Salgados`)">
                         <span class="material-symbols-outlined">
                             fastfood
                         </span>
@@ -73,7 +73,7 @@
                     </a>
                 </li>
                 <li class="cat-cardapio">
-                    <a href="javascript:void">
+                    <a href="javascript:void" onclick="mudaItem(`Bebidas`)">
                         <span class="material-symbols-outlined">
                             emoji_food_beverage
                         </span>
@@ -241,7 +241,7 @@
             <div class="itens-cardapio">
               <img class="img-default img-redodada" src="img/croissant4.jpg" alt="Croissant francês"/>
               <h4 class="sub-h3">Croissant à Moda Francesa  </h4>
-              <p class="texto-1">Tradicional e folhadíssimo, super amanteigado e sem conservantes.</p>
+              <p class="texto-1">Tradicional e folhadíssimo.</p>
               <h4 class="sub-h3">R$ 16,90</h4>
             </div>
             <div class="itens-cardapio">
@@ -385,8 +385,8 @@
             &copy; Copyrigth 2023 - Design by <a href="https://github.com/Isack2022">Isack Santos</a> | <a href="javascript:void" onclick="politica();">Politica de Privacidade</a>
         </div>
     </footer>
+    <script src="js/cafeteria.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="js/cafeteria.js"></script>
 </body>
 </html>
