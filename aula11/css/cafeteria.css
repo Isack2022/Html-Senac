@@ -328,13 +328,18 @@ section .uma-fracao ion-icon{
   font-size: 12pt;
   text-decoration: none;
   color: #000;
+  transition: ease  0.4s;
 }
 
 .cat-cardapio span{
   color: #38250A;
 }
 
-.itens-cardapio{
+.inline-flex{
+  display: inline-flex;
+}
+
+.itens-cardapio{ 
   width: 250px;
   height: 400px;
   padding: 20px;

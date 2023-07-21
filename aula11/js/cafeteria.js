@@ -171,3 +171,22 @@ function mudaItem(cat){
         }
     }
 }
+
+//Obter o tamanho da tela e usar apenas a metade
+let metadeTela = window.screen.width / 2;
+
+let pos = 0;
+
+//Vamos obter a posicao do mouse
+document.body.onmousemove = () => {
+    let px = window.event.clientX; //Pega a posição horizontal do mouse
+    
+    if(px > metadeTela){
+        document.querySelector("section").style.marginLeft = -pos + "px";
+        pos-=3;
+    }
+    else{
+        document.querySelector("section").style.marginLeft = pos + "px";
+        pos+=3;  
+    }
+};
